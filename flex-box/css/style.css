@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  /* display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; */
+  background-color: #b0c0bc;
+}
+ul {
+  list-style: none;
+}
+header {
+  height: 10%;
+  background-color: #2a2b2a;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+header ul li {
+  width: 15%;
+}
+
+a {
+  color: #c1edcc;
+}
+
+main {
+  margin: 10px;
+}
+main div {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+main div p {
+  border: 1px dotted #f19953;
+  background-color: #b0c0bc;
+  padding: 10px;
+  width: 30%;
+  height: 40%;
+  margin: 10px;
+}
+
+footer {
+  background-color: #2a2b2a;
+  color: #c1edcc;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+footer li {
+  text-align: justify;
+}
+
+footer a {
+  justify-content: center;
+}
+
+.wrap {
+  margin: 10px;
+  padding: 10px;
+}
+
+#quiSommesNous {
+  width: 100%;
+  text-align: center;
+}
+
+#soutiens ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.wrap img {
+  margin: 3px;
+  width: 30px;
+}
+
+@media (max-width: 500px) {
+  body {
+    background-color: #2a2b2a;
+  }
+  main div {
+    flex-direction: column;
+  }
+  main div p {
+    width: 75%;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    border: 2px solid #f19953;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  main div p {
+    border-radius: 10px;
+  }
+}

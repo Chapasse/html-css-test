@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 2</title>
+</head>
+
+<body>
+    <header>
+        <p>Ceci est mon header</p>
+    </header>
+
+    <main>
+        <h1>EXO 2</h1>
+        <h2>Formulaire </h2>
+
+        <form method="post" action="">
+
+            <h3>Coordonnees</h3>
+
+
+            <div>
+                <!-- Ici j utilse des balises div afin d avoir une meilleure visibilité-->
+                <label for="nom">Nom</label>
+                <input id="nom" type="text" name="nom" size="25">
+
+                <label for="prenom">Prénom</label>
+                <input id="prenom" type="text" name="prenom" size="25">
+            </div><br>
+
+
+            <div>
+                <!-- Check Box -->
+
+                <label for="document">Je désire recevoir une documentation</label>
+                <input id="document" type="checkbox" name=”document”>
+            </div><br>
+
+            <div>
+                <!-- Select -->
+
+                <label for="pays"><strong>Veuillez choisir un Pays</strong></label>
+                <select id="pays" name="pays" size="1">
+                    <option value="france">France</option>
+                    <option value="italie">Italie</option>
+                    <option value="espagne">Espagne</option>
+                </select>
+            </div><br>
+
+            <div>
+                <!-- Radio -- un SEUL choix possible -->
+
+
+                <p><strong>Sexe</strong></p>
+                <input type="radio" name="sexe" id="masculin"> <!-- On peut rajouter l attribut Checked-->
+
+                <label for="masculin"> Masculin</label>
+
+                <input type="radio" name="sexe" id="feminin">
+                <label for="feminin"> Féminin</label>
+
+                <input type="radio" name="sexe" id="autre">
+                <label for="autre"> Autre </label>
+
+            </div><br>
+
+
+            <div>
+                <!-- Plusieurs choix possibles -->
+
+                <p><strong>Langue(s) parlée(s)</strong></p>
+
+                <input type="checkbox" name="langue" id="français">
+                <label for="français"><strong>Français</strong></label>
+
+                <input type="checkbox" name="langue" id="anglais">
+                <label for="anglais"><strong>Anglais</strong></label>
+
+                <input type="checkbox" name="langue" id="chinois">
+                <label for="chinois"><strong>Chinois</strong></label>
+
+            </div><br>
+
+            <div>
+                <!-- Text area    avec bouton ENVOYER et Effacer  -->
+
+                <label for="question"><strong>Vous pouvez nous faire parvenir vos questions</strong></label> <br>
+                <TEXTAREA id="question" name="comments" rows=4 cols=60></textarea>
+
+            </div>
+            <div>
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Effacer">
+
+            </div>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>Mon FOOTER</p>
+    </footer>
+
+</body>
+
+</html>

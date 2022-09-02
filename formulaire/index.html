@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les Formulaires</title>
+  </head>
+  <body>
+    <style>
+      li {
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+      }
+      button {
+        width: 50%;
+        margin: 10px auto;
+        background-color: aquamarine;
+      }
+    </style>
+    <form method="post" action="">
+      <ul>
+        <li>
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" name="nom" />
+        </li>
+
+        <li>
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom" name="prenom" />
+        </li>
+
+        <li>
+          <label for="numeroCompte">Numéro de compte</label>
+          <input type="number" id="numeroCompte" name="numeroCompte" />
+        </li>
+
+        <li>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+        </li>
+
+        <li>
+          <label for="password">Mot de passe</label>
+          <input type="password" id="password" name="password" />
+        </li>
+        <li>
+          <label for="maj">Acceptez-vous les nouvelles maj</label>
+          <input type="checkbox" id="maj" name="maj" />
+        </li>
+
+        <p>Fruit(s) préféré(s)</p>
+        <input type="checkbox" id="banane" name="fruits" />
+        <label for="banane">Banane</label>
+        <input type="checkbox" id="fraise" name="fruits" />
+        <label for="fraise">Fraise</label>
+        <input type="checkbox" id="pomme" name="fruits" />
+        <label for="pomme">Pomme</label>
+
+        <p>Fruit(s) préféré(s)</p>
+        <input type="radio" id="banane1" name="fruits1" />
+        <label for="banane1">Banane</label>
+        <input type="radio" id="fraise1" name="fruits1" />
+        <label for="fraise1">Fraise</label>
+        <input type="radio" id="pomme1" name="fruits1" />
+        <label for="pomme1">Pomme</label>
+
+        <li>
+          <label for="temoignage">Votre témoignage</label>
+          <textarea
+            name="temoignage"
+            id="temoignage"
+            cols="50"
+            rows="5"
+          ></textarea>
+        </li>
+        <br />
+        <br />
+
+        <li>
+          <label for="selectionFruit">Choisissez votre fruit</label>
+          <select name="selectionFruit" id="selectionFruit">
+            <option value="banane">Banane</option>
+            <option value="fraise">Fraise</option>
+            <option value="pomme">Pomme</option>
+            <option value="orange">Orange</option>
+            <option value="kiwi">Kiwi</option>
+          </select>
+        </li>
+
+        <br />
+        <br />
+
+        <li>
+          <input type="submit" value="Envoyer" />
+          <input type="reset" value="Effacer" />
+        </li>
+      </ul>
+    </form>
+  </body>
+</html>

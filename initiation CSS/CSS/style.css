@@ -1,0 +1,29 @@
+p {
+  color: aqua;
+}
+
+h2 {
+  color: yellowgreen;
+}
+
+h3 {
+  color: pink;
+}
+
+#lalala {
+  background-color: antiquewhite;
+}
+
+#lalala2 {
+  background-color: plum;
+}
+
+#lalala3 {
+  background-color: coral;
+}
+
+.divGroupe {
+  width: 600px;
+  height: 200px;
+  border: solid 1px green;
+}
